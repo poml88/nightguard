@@ -43,6 +43,6 @@
 	<key>WKApplication</key>
 	<true/>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>de.my-wan.dhe.nightguard</string>
+	<string>de.poeml.philipp.nightguard</string>
 </dict>
 </plist>

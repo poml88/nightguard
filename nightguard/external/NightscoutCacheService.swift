@@ -14,7 +14,7 @@ class NightscoutCacheService: NSObject {
     
     static let singleton = NightscoutCacheService()
     
-    let serialQueue = DispatchQueue(label: "de.my-wan.dhe.nightscoutCacheServiceSerialQueue")
+    let serialQueue = DispatchQueue(label: "de.poeml.philipp.nightscoutCacheServiceSerialQueue")
     
     var isEmpty: Bool {
         return yesterdaysBgData.isEmpty && todaysBgData.isEmpty
@@ -292,7 +292,7 @@ class NightscoutCacheService: NSObject {
     
     fileprivate func checkIfRefreshIsNeeded(_ resultHandler : @escaping (NightscoutRequestResult<NightscoutData>?) -> Void, forceRefresh: Bool = false) {
         
-        guard forceRefresh || currentNightscoutData.isOlderThan5Minutes() else {
+        guard forceRefresh || currentNightscoutData.isOlderThanYMinutes() else {
             resultHandler(nil)
             return
         }

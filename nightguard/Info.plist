@@ -4,7 +4,7 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>de.my-wan.dhe.nightguard.background</string>
+		<string>de.poeml.philipp.nightguard.background</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

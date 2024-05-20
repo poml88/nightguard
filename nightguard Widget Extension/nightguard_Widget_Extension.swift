@@ -10,6 +10,9 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+
+
+
 @main
 struct NightguardWidgetsBundle: WidgetBundle {
     var body: some Widget {
@@ -25,7 +28,7 @@ struct NightguardDefaultWidgets: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(
-            kind: "org.duckdns.dhe.nightguard.NightguardDefaultWidgets",
+            kind: "de.poeml.philipp.nightguard.NightguardDefaultWidgets",
             provider: provider
         ) { entry in
             NightguardEntryView(entry: entry)
@@ -48,7 +51,7 @@ struct NightguardGaugeWidgets: Widget {
     
     var body: some WidgetConfiguration {
         StaticConfiguration(
-            kind: "org.duckdns.dhe.nightguard.NightguardGaugeWidgets",
+            kind: "de.poeml.philipp.nightguard.NightguardGaugeWidgets",
             provider: provider
         ) { entry in
             NightguardGaugeEntryView(entry: entry)

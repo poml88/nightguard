@@ -10,6 +10,8 @@ import Foundation
 import SwiftUI
 import WidgetKit
 
+
+
 struct AccessoryCircularView : View {
     
     var entry: NightscoutDataEntry
@@ -22,9 +24,9 @@ struct AccessoryCircularView : View {
         Text("\(entry.lastBGValues.first?.delta ?? "?")")
             .foregroundColor(
                 Color(UIColorChanger.getDeltaLabelColor(Float(entry.lastBGValues.first?.delta ?? "99") ?? 99.0)))
-        .widgetAccentable(true)
-        .unredacted()
+            .widgetAccentable(true)
+            .unredacted()
+            
     }
 }
-
 

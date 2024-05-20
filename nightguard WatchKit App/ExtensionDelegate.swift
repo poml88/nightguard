@@ -33,7 +33,7 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate {
     var sessionError: Error?
     var sessionStartTime: Date?
     var userInfoAccess: NSSecureCoding?
-    let appProcessingTaskId = "de.my-wan.dhe.nightguard.background"
+    let appProcessingTaskId = "de.poeml.philipp.nightguard.background"
     
     func applicationDidFinishLaunching() {
         
