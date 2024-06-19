@@ -15,7 +15,8 @@ struct AccessoryCircularGaugeView : View {
     var entry: NightscoutDataEntry
     
     var body: some View {
-        
+        ZStack {
+            AccessoryWidgetBackground()
         Gauge(value: Double(
             calculateAgeInMinutes(
                 fromDouble: entry.lastBGValues.first?.timestamp ?? Date.now.timeIntervalSinceNow - 3600)) ?? 60,
@@ -36,6 +37,7 @@ struct AccessoryCircularGaugeView : View {
         .gaugeStyle(.accessoryCircular)
         .widgetAccentable(true)
         .unredacted()
+        }
     }
 }
 
